@@ -41,13 +41,14 @@
 <!-- panel -->
 <div class="panel">
 
+
 <div class="leftsidebar">
 
 
 <div class="heading" >
 <div class="title">Get Started</div>
 <div class="links">
-<a href="./QuickStart.html" id="mainHeading"  ><li>Quick Start
+<a href="./QuickStart.html" id="mainHeading" class="active" ><li>Quick Start
  <span><img src="../image/arrowright.png" alt="arrow right" id="arrow"></span>
  </li>
  </a>
@@ -71,7 +72,14 @@
             </li>
           </a>
 
+<div class="subLinks">
+<a href="./CreateDDL.html" class="active"> <li>Create Command</li></a>
+<a href="./DropDDL.html"><li>Drop Command</li></a>
+<a href="./ALterDDL.html"><li>Alter Command</li></a>
+<a href="./TruncateDDL.html"><li>Truncate Command</li></a>
+<a href="./RenameDDL.html"><li>Rename Command</li></a>
 
+</div>
 
           <a href="./DML.html" id="mainHeading">
             <li>DML
@@ -79,18 +87,12 @@
               <span><img src="../image/arrowright.png" alt="arrow right" id="arrow"></span>
             </li>
           </a>
-          <a href="./DCL.html" id="mainHeading" >
+          <a href="./DCL.html" id="mainHeading">
             <li>DCL
 
               <span><img src="../image/arrowright.png" alt="arrow right" id="arrow"></span>
             </li>
           </a>
-          <div class="subLinks">
-<a href="./GrantDcl.html" class="active"> <li>Grant Command</li></a>
-<a href="./RevokeDcl.html"><li>Revoke Command</li></a>
-
-
-</div>
           <a href="./DQL.html" id="mainHeading">
             <li>DQL
 
@@ -311,29 +313,27 @@
 
 
 <div class="rightsidebar">
-<h1>Grant  Privileges
-         </h1>
-
+<h1>The SQL DELETE Statement
+         
     
    
-<p id="data">The <span id="colorBold"> Grant statement</span> is used manage Privileges
+<p id="data">The <span id="colorBold"> DELETE statement</span> is used to delete existing records in a table.
     
     </p>
-<p class="full">1.Granting SELECT Privilege to a User in a Table: To grant Select Privilege to a table named “users” where User Name is Amit, the following GRANT statement should be executed.</p>
-<div class="codeSnippet">
-<pre><code class="language-css">
-    GRANT SELECT ON Users TO'Amit'@'localhost;
-    
-</code></pre>
-</div>
+<div class="big">Syntax</div>
 
-<p class="full">Granting more than one Privilege to a User in a Table: To grant multiple Privileges to a user named “Amit” in a table “users”, the following GRANT statement should be executed.</p>
+
 <div class="codeSnippet">
 <pre><code class="language-css">
-  GRANT SELECT, INSERT, DELETE, UPDATE ON Users TO 'Amit'@'localhost;
-    
+    DELETE FROM table_name WHERE condition;
 </code></pre>
 </div>
+<div class="medium">Output</div>
+<img src="../image/DELETE1.png" alt="create table" id="output"/>
+
+<p id="full">The column parameters specify the names of the columns of the table.
+</p>
+<p id="full">The datatype parameter specifies the type of data the column can hold (e.g. varchar, integer, date, etc.).</p>
 
 </div>
 </div>

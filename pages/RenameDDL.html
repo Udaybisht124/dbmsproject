@@ -73,11 +73,11 @@
           </a>
 
 <div class="subLinks">
-<a href="./CreateDDL.html"> <li>Create Command</li></a>
+<a href="./CreateDDL.html" class="active"> <li>Create Command</li></a>
 <a href="./DropDDL.html"><li>Drop Command</li></a>
 <a href="./ALterDDL.html"><li>Alter Command</li></a>
 <a href="./TruncateDDL.html"><li>Truncate Command</li></a>
-<a href="./RenameDDL.html"  class="active"><li>Rename Command</li></a>
+<a href="./RenameDDL.html"><li>Rename Command</li></a>
 
 </div>
 
@@ -313,23 +313,23 @@
 
 
 <div class="rightsidebar">
-<h1>The SQL RENAME Command</h1>
+<h1>The SQL RENAME Statement</h1>
 
 
 
-<p id="data">The <span id="colorBold">Rename Column</span> ALTER TABLE </p>
+<p id="data">The <span id="colorBold">TRUNCATE TABLE</span> ALTER TABLE </p>
 <div class="big">Syntax</div>
 
 
 <div class="codeSnippet">
 <pre><code class="language-css">
-ALTER TABLE table_name
-RENAME COLUMN old_name to new_name;
+
+   Table_Name RENAME COLUMN old_column_name TO new_column_name;
 
 </code></pre>
 </div>
 <div class="medium">Output</div>
-<img src="../image/rename.png" alt="create table" id="output"/>
+<img src="../image/truncate1.png" alt="create table" id="output"/>
 
 <p id="full">The column parameters specify the names of the columns of the table.
 </p>

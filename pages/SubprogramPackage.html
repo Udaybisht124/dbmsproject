@@ -51,10 +51,7 @@
  <span><img src="../image/arrowdown.png" alt="arrow right" id="arrow"></span>
  </li>
  </a>
-<div class="subLinks">
-<a href="./IntroductionToDBMS.html" class="active"><li>Introduction to DBMS</li></a>
 
-</div>
  <a href="./Installation.html" id="mainHeading">
               <li>Installation
                 <span><img src="../image/arrowright.png" alt="arrow right" id="arrow"></span>
@@ -241,7 +238,7 @@
                           <span><img src="../image/arrowright.png" alt="arrow right" id="arrow"></span>
                         </li>
                       </a>
-                      <a href="./SubprogramPackage.html" id="mainHeading">PACKAGES<li>
+                      <a href="./SubprogramPackage.html" id="mainHeading" class="active">PACKAGES<li>
                         <span><img src="../image/arrowright.png" alt="arrow right" id="arrow"></span>
                       </li>
                     </a>
@@ -307,37 +304,26 @@
 
 
 <div class="rightsidebar">
-<h1>Introduction of DBMS (Database Management System)</h1>
+<h1>SUBPROGRAM PACKAGE</h1>
 
-<div class="big">INTRODUCTION:</div>
-<p id="data">A Database Management System (DBMS) is a software system that is designed to manage and organize data in a structured manner. It allows users to create, modify, and query a database, as well as manage the security and access controls for that database.</p>
-<div class="medium">Some key features of a DBMS include:</div>
-<p id="data1">1.Data modeling: A DBMS provides tools for creating and modifying data models, which define the structure and relationships of the data in a database.</p>
-<p id="data1">2.Data storage and retrieval: A DBMS is responsible for storing and retrieving data from the database, and can provide various methods for searching and querying the data.
-</p>
-<p id="data1">3.Concurrency control: A DBMS provides mechanisms for controlling concurrent access to the database, to ensure that multiple users can access the data without conflicting with each other.</p>
-<p id="data1">4.Data integrity and security: A DBMS provides tools for enforcing data integrity and security constraints, such as constraints on the values of data and access controls that restrict who can access the data.</p>
-<p id="data1">5.Backup and recovery: A DBMS provides mechanisms for backing up and recovering the data in the event of a system failure.</p>
-<p id="data1">6.DBMS can be classified into two types: Relational Database Management System (RDBMS) and Non-Relational Database Management System (NoSQL or Non-SQL)</p>
-<p id="data1">7.RDBMS: Data is organized in the form of tables and each table has a set of rows and columns. The data is related to each other through primary and foreign keys.</p>
-<p id="data1">8.NoSQL: Data is organized in the form of key-value pairs, document, graph, or column-based. These are designed to handle large-scale, high-performance scenarios.</p>
+<p class="full" >PL/SQL package is a group of related functions, procedures, types, cursors, etc. PL/SQL package is like a library once written stored in the Oracle database and can be used by many applications.
 
-<p id="full">Database is a collection of interrelated data which helps in the efficient retrieval, insertion, and deletion of data from the database and organizes the data in the form of tables, views, schemas, reports, etc. For Example, a university database organizes the data about students, faculty, admin staff, etc. which helps in the efficient retrieval, insertion, and deletion of data from it.</p>
-
-<h5 class="centerHeading">
-There are four types of Data Languages
-</h5>
-<p id="data1">1.Data Definition Language <b>(DDL)</b></p>
-<p id="data1">2.Data Manipulation Language <b>(DML)</b></p>
-<p id="data1">3.Data Control Language <b>(DCL)</b></p>
-<p id="data1">4.Transactional Control Language <b>(TCL)</b></p>
-<p  id="full"><b>DDL</b> is the short name for Data Definition Language, which deals with database schemas and descriptions, of how the data should reside in the database.</p>
-<p  id="full"><b>DML</b> is the short name for Data Manipulation Language which deals with data manipulation and includes most common SQL statements such SELECT, INSERT, UPDATE, DELETE, etc., and it is used to store, modify, retrieve, delete and update data in a database.</p>
-<p  id="full"><b>DCL</b> is short for Data Control Language which acts as an access specifier to the database.(basically to grant and revoke permissions to users in the database</p>
-<p  id="full"><b>TCL</b>TCL is short for Transactional Control Language which acts as an manager for all types of transactional data and all transactions.</p>
+  <BR>A PL/SQL package has two parts: package specification and package body.
+  
+ <BR> A package specification is the public interface of your applications. The public means the stored function, procedures, types, etc., are accessible from other applications.
+ <BR> A package body contains the code that implements the package specification.
+  <BR>Creating PL/SQL Package Specification
+  <BR>The package specification is required when you create a new package. The package specification lists all the objects which are publicly accessible from other applications. The package specification also provides the information that developers need to know in order to use the interface. In short, package specification is the package’s API.
+  
+  <BR>If the package specification does not contain any stored functions, procedures and no private code is needed, you don’t need to have a package body. These packages may contain only type definition and variables declaration. Those variables are known as package data. The scope of package data is global to applications. It is recommended that you should hide as much as package data as possible and use get and set functions to read and write that data. By doing this, you can prevent your package data changed unintentionally.
+  
+  <BR>It is important to note that you must compile the package specification before package body.
+  
+<BR>  Here is the syntax for creating PL/SQL package specification:
+  
+  <BR>CREATE [OR REPLACE] PACKAGE package_name
+  <BR>[ AUTHID { CURRENT_USER | DEFINER } ]
+  <BR>{ IS | AS }
 </div>
-</div>
-
-
 </body>
 </html>

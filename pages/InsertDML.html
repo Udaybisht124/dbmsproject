@@ -66,27 +66,27 @@
  <div class="heading">
         <div class="title">SQL COMMANDS</div>
         <div class="links">
-          <a href="./DDL.html" id="mainHeading ">
+          <a href="./DDL.html" id="mainHeading " >
             <li>DDL
-              <span><img src="../image/arrowright.png" alt="arrow right" id="arrow"></span>
-            </li>
-          </a>
-
-
-
-          <a href="./DML.html" id="mainHeading" >
-            <li>DML
-
               <span><img src="../image/arrowdown.png" alt="arrow right" id="arrow"></span>
             </li>
           </a>
 
-          <div class="subLinks">
-<a href="./UpdateDML.html"><li>Update Command</li></a>
-<a href="./InsertDML.html" class="active"><li>Insert Command</li></a>
-<a href="./DeleteDML.html"><li>Delete Command</li></a>
+<div class="subLinks">
+<a href="./CreateDDL.html" class="active"> <li>Create Command</li></a>
+<a href="./DropDDL.html"><li>Drop Command</li></a>
+<a href="./ALterDDL.html"><li>Alter Command</li></a>
+<a href="./TruncateDDL.html"><li>Truncate Command</li></a>
+<a href="./RenameDDL.html"><li>Rename Command</li></a>
 
 </div>
+
+          <a href="./DML.html" id="mainHeading">
+            <li>DML
+
+              <span><img src="../image/arrowright.png" alt="arrow right" id="arrow"></span>
+            </li>
+          </a>
           <a href="./DCL.html" id="mainHeading">
             <li>DCL
 
@@ -313,26 +313,24 @@
 
 
 <div class="rightsidebar">
-<h1>The SQL INSERT INTO command</h1>
+<h1>The SQL INSERT INTO Statement
          
     
    
-<p id="data">The <span id="colorBold"> INSERT</span>   INTO command is used to insert new records in a table.
+<p id="data">The <span id="colorBold"> INSERT</span>   INTO statement is used to insert new records in a table.
     
     </p>
 <div class="big">Syntax</div>
 
 
 <div class="codeSnippet">
-<pre>
-<code class="language-sql"> 
-INSERT INTO table_name (column1,column2, column3, ...)
-    VALUES (value1, value2,  value3, ...);
-
+<pre><code class="language-css">
+    INSERT INTO table_name (column1, column2, column3, ...)
+    VALUES (value1, value2, value3, ...);
 </code></pre>
 </div>
 <div class="medium">Output</div>
-<img src="../image/insert1.png" alt="create table" id="output1"/>
+<img src="../image/insert1.png" alt="create table" id="output"/>
 
 <p id="full">The column parameters specify the names of the columns of the table.
 </p>
